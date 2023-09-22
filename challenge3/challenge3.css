@@ -14,10 +14,15 @@ h1 {
   font-size: 3rem; /* 48px = 3rem*/
 }
 
+h2{
+  font-size: 2.25rem;
+}
+
 .container {
   width: 80%;
-  max-width: 750px;
+  max-width: 1250px;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 .hero {
@@ -45,6 +50,27 @@ h1 {
   padding: .75em 2em;
   border-radius: 5em;
   border: none;
+}
+
+.row {
+  display: flex
+}
+
+.col + .col {
+  margin-left: 2rem;
+}
+
+.col {
+  text-align: center;
+}
+
+.three h2{
+  color: #87629A;
+}
+
+.two {
+  color: white;
+  background-color: #136C72;
 }
 
 /* 
