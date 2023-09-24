@@ -10,6 +10,10 @@ body {
   font-size: 1.3rem; /* 16px = 1rem -> 21px ~ 1.3rem*/
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 3rem; /* 48px = 3rem*/
 }
@@ -32,7 +36,13 @@ h2{
 }
 
 .hero_content {
-  width: 50%;
+  width: 62%;
+}
+
+.hero_image {
+  width: 32%;
+  align-self: flex-start; /* makes sure image doesn't stretch to fit height, keeps original proportions */
+  object-fit: cover;
 }
 
 .hero p {
@@ -53,7 +63,8 @@ h2{
 }
 
 .row {
-  display: flex
+  display: flex;
+  justify-content: space-between;
 }
 
 .col + .col {
@@ -64,7 +75,7 @@ h2{
   text-align: center;
 }
 
-.three h2{
+.accent-text{
   color: #87629A;
 }
 
