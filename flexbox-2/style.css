@@ -51,6 +51,43 @@ p {
   justify-content: space-between;
 }
 
+header {
+  background: #136c72;
+  padding: 0.5em 0;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  padding: 0.25em 1em;
+  border-radius: 10em;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
 .hero {
   background-color: #23424a;
   color: #fff;
@@ -87,11 +124,11 @@ p {
   margin-left: 3rem;
 }
 
-.main-col {
+.main-content {
   width: 60%;
 }
 
-.secondary-col {
+.sidebar {
   width: 40%;
   text-align: center;
   background-color: #136c72;
