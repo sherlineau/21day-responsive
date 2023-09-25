@@ -40,14 +40,11 @@ p {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1em;
 }
 
 .row {
   display: flex;
-}
-
-.space-between {
   justify-content: space-between;
 }
 
@@ -56,20 +53,28 @@ header {
   padding: 0.5em 0;
 }
 
-.navbar {
-  margin: 0 auto;
-  padding: 1em 0;
+.logo {
+  margin: 0 1em;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 
 .nav__list {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
+  list-style: none;
+  font-size: .9rem;
 }
 
-.nav__item {
-  margin-right: 1em;
+.nav__item + .nav__item {
+  margin-left: 1em;
 }
 
 .nav__link {
@@ -124,6 +129,10 @@ header {
 
 .col + .col {
   margin-left: 3rem;
+}
+
+.main {
+  margin-top: 2rem;
 }
 
 .main-content {
