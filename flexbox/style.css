@@ -53,9 +53,9 @@ header {
   padding: 0.5em 0;
 }
 
-.logo {
+/* .logo {
   margin: 0 1em;
-}
+} */
 
 .navbar {
   display: flex;
@@ -71,6 +71,10 @@ header {
   display: flex;
   list-style: none;
   font-size: .9rem;
+}
+
+.nav__list--primary {
+  margin: auto;
 }
 
 .nav__item + .nav__item {
