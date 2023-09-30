@@ -5,12 +5,25 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3125rem;
+  font-weight: 300;
+  font-size: 1.125rem;
+
+  /* 
+  beige: #F3EED9;
+  brown: #824936;
+  green: #222C2A; 
+  */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
     font-weight: 900;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.135rem;
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -22,8 +35,44 @@ h2 {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1128px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 100%;
+}
+
+.col + .col {
+    margin-left: 2.5rem;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+.bg-green{
+    background-color: #222C2A;
+    color: white;
+}
+
+.bg-brown {
+    background-color: #824936;
+    color: white;
+}
+
+.text-brown {
+    color: #824936;
+}
+
+.text-beige {
+    color:#F3EED9;
 }
 
 .hero {
@@ -38,7 +87,7 @@ h2 {
 }
 
 .hero h1 {
-    width: 95%;
+    width: 45%;
     color: #824936;
 }
 
@@ -48,3 +97,4 @@ h2 {
     letter-spacing: .5rem;
     font-weight: 300;
 }
+
