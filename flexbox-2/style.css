@@ -1,29 +1,23 @@
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400;700;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400;700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.125rem;
+  font-size: 18px;
 
-  /* 
-  beige: #F3EED9;
-  brown: #824936;
-  green: #222C2A; 
-  */
+  --brown: #824936;
+  --beige: #F3EED9;
+  --dark-green: #222C2A;
+  --white: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
     font-weight: 900;
-    margin-bottom: 1em;
-}
-
-p {
-    font-size: 1.135rem;
-    margin-bottom: 1em;
 }
 
 h1 {
@@ -32,47 +26,53 @@ h1 {
 
 h2 {
     font-size: 2.25rem;
+    margin-bottom: .25em;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .container {
     width: 90%;
     max-width: 1128px;
     margin: 0 auto;
-    padding: 3em 0;
+    padding: 3em;
 }
 
 .row {
     display: flex;
+    gap: 2em;
 }
 
-.col {
-    width: 100%;
-}
-
-.col + .col {
-    margin-left: 2.5rem;
-}
-
-.align-text-center {
+.center-text {
     text-align: center;
 }
 
-.bg-green{
-    background-color: #222C2A;
-    color: white;
-}
-
-.bg-brown {
-    background-color: #824936;
-    color: white;
-}
-
 .text-brown {
-    color: #824936;
+    color: var(--brown);
 }
 
 .text-beige {
-    color:#F3EED9;
+    color: var(--beige);
+}
+
+.text-white {
+    color: var(--white)
+}
+
+.bg-green {
+    background-color: var(--dark-green);
+}
+
+.bg-beige {
+    background-color: var(--beige);
+}
+
+.bg-brown {
+    background-color: var(--brown);
 }
 
 .hero {
@@ -82,13 +82,11 @@ h2 {
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: #F3EED9;
     text-align: center;
 }
 
 .hero h1 {
-    width: 45%;
-    color: #824936;
+    width: 95%;
 }
 
 .hero p {
@@ -97,4 +95,3 @@ h2 {
     letter-spacing: .5rem;
     font-weight: 300;
 }
-
